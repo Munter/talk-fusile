@@ -1,0 +1,37 @@
+.reveal section img {
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex img {
+    width: 30%;
+}
+
+.flex-big {
+    font-size: 4em !important;
+}
+
+.flex-big img {
+    width: 45%;
+}
+
+.shadow *{
+    text-shadow: 0 2px 10px black !important;
+}
+
+pre {
+    padding: 20px !important;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.flex div p {
+    text-align: left;
+}

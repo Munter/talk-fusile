@@ -1,0 +1,97 @@
+
+.workflow.workflow-loop {
+  $borderWidth: 20px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: $borderWidth solid white;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+
+  > .stop {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+
+    white-space: pre;
+
+    label {
+      position: absolute;
+      padding: 10px;
+    }
+
+    &.browser {
+      top: -#{$borderWidth / 2};
+      left: 50%;
+
+      > label {
+        bottom: 100%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &.filesystem {
+      left: 50%;
+      top: calc(100% + #{$borderWidth / 2});
+
+      > label {
+        top: 100%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &.editor {
+      top: 50%;
+      left: -#{$borderWidth / 2};
+
+      > label {
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.webserver {
+      top: 50%;
+      left: calc(100% + #{$borderWidth / 2});
+
+      > label {
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .arrow {
+    // outline: 1px dotted hotpink;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::after {
+      // outline: 1px dotted yellow;
+      content: '→';
+      position: absolute;
+
+      line-height: 0;
+      vertical-align: middle;
+      top: -26px;
+      left: 100px;
+      // transform: translate(-50%, -50%);
+      font-size: 280px;
+    }
+  }
+}

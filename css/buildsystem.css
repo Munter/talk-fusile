@@ -1,0 +1,58 @@
+.buildsystem {
+    display: flex;
+    flex-direction: column;
+}
+
+.buildsystem .task {
+    display: flex;
+    align-items: center;
+}
+
+.buildsystem .input,
+.buildsystem .output {
+    border: 4px solid white;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.buildsystem .transform {
+    height: 120px;
+}
+
+.buildsystem .io {
+    flex: 1;
+    font-size: 300%;
+    line-height: 0;
+    margin-top: -20px;
+
+    /*outline: 1px dashed red;*/
+}
+
+.buildsystem .config {
+    flex: 1 1 auto;
+    padding: 30px;
+}
+
+.buildsystem.gulp .input,
+.buildsystem.gulp .output,
+.buildsystem.gulp .io {
+    opacity: 0;
+}
+
+.buildsystem.gulp .task:first-of-type .input,
+.buildsystem.gulp .task:first-of-type .io-before,
+.buildsystem.gulp .task:last-of-type .output,
+.buildsystem.gulp .task:last-of-type .io-after {
+    opacity: 1;
+}
+
+.buildsystem.gulp .config {
+    font-size: 300%;
+}
+
+.buildsystem.assetgraph .task > img {
+    height: 150px;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
