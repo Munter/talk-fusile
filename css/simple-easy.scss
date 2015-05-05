@@ -1,27 +1,5 @@
-html.fullscreen {
-  .slides {
-    zoom: 1 !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    transform: none !important;
-    width: auto !important;
-    height: auto !important;
-  }
-
-  section.fullscreen {
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    padding: 0 !important;
-  }
-}
 
 .simple-easy {
-
-
   display: flex !important;
   flex-direction: row;
 

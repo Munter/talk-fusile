@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
     <link rel="stylesheet" href="css/overrides.css" id="theme">
 
+    <link rel="stylesheet" href="css/fullscreen.scss">
     <link rel="stylesheet" href="css/simple-easy.scss">
+    <link rel="stylesheet" href="css/workflow-progression.scss">
     <link rel="stylesheet" href="css/workflow.scss">
     <link rel="stylesheet" href="css/buildsystem.css">
 
@@ -49,20 +51,12 @@
 			<div class="slides">
 				<section>
 					<h1>Making Development Workflows Simple</h1>
-					<p><a href="http://twitter.com/_munter_">@_munter_</a></p>
 				</section>
 
         <section>
-            <pre>var self = this;
-console.log(JSON.stringify(self));
-
-{
-"name": "Peter Müller",
-"web": "<a href="http://mntr.dk">mntr.dk</a>,
-"twitter": "<a href="http://twitter.com/_munter_">@_munter_</a>",
-"github": "<a href="http://github.com/Munter">Munter</a>"
-}
-            </pre>
+          <h2>Peter Müller<h2>
+          <h2><a href="http://twitter.com/_munter_">@_munter_</a></h2>
+          <h2><a href="http://mntr.dk">mntr.dk</a></h2>
         </section>
 
         <section>
@@ -77,7 +71,12 @@ console.log(JSON.stringify(self));
           <img src="images/podio.svg" style="height: 500px">
         </section>
 
-        <section>
+        <section class="transpiler">
+          <h2>Transpiler</h2>
+          <h3>Source to source compiler</h3>
+        </section>
+
+        <section data-background="images/codingpirates.png">
           Why?
           Next generation
           Diversity
@@ -97,9 +96,11 @@ console.log(JSON.stringify(self));
         </section>
 
         <section class="fullscreen workflow-progression" data-state="fullscreen">
-          <div class="planning">Plan</div>
-          <div class="development">Develop</div>
-          <div class="deployment">Deploy</div>
+          <article class="plan"><h2>Plan</h2></article>
+          <article class="develop"><h2>Develop</h2></article>
+          <article class="deploy"><h2>Deploy</h2></article>
+
+          <div class="arrow"></div>
         </section>
 
         <section>
