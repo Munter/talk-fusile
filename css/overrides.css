@@ -35,3 +35,9 @@ pre {
 .flex div p {
     text-align: left;
 }
+
+.reveal .transpiler {
+  h2 {
+    font-size: 200px;
+  }
+}
