@@ -1,6 +1,7 @@
 
 .workflow.workflow-loop {
   $borderWidth: 20px;
+  $circleRadius: 40px;
 
   position: absolute;
 
@@ -18,8 +19,8 @@
 
     transform: translate(-50%, -50%);
 
-    width: 60px;
-    height: 60px;
+    width: $circleRadius * 2;
+    height: $circleRadius * 2;
     background: white;
     border-radius: 50%;
 
@@ -89,9 +90,29 @@
       line-height: 0;
       vertical-align: middle;
       top: -26px;
-      left: 100px;
+      left: 80px;
       // transform: translate(-50%, -50%);
       font-size: 280px;
     }
+  }
+
+  .arrow.requirejs {
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+
+  .arrow.grunt {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .arrow.express {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .arrow.editor {
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+
+  .arrow.fusile {
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 }
