@@ -14,9 +14,9 @@ digraph fusile{
         "CSS?"[shape=diamond];
         "Transpiler";
         "Cache";
-        "Response";
+        "Source";
         "Autoprefixer";
-        "ResponseStream";
+        "Buffer";
 
         {
             rank = same;
@@ -28,7 +28,7 @@ digraph fusile{
         {
             rank = same;
             "Cache";
-            "Response";
+            "Source";
         }
 
         {
@@ -38,17 +38,17 @@ digraph fusile{
         }
     }
 
-    "transpiler?" -> "Response"[label="No"];
+    "transpiler?" -> "Source"[label="No"];
     "transpiler?" -> "cached?"[label="Yes"];
     "cached?" -> "Transpiler"[label="No"];
     "cached?" -> "Cache"[label="Yes"];
     "Transpiler" -> "Cache";
-    "Cache" -> "Response";
-    "Response" -> "CSS?";
-    "CSS?" -> "ResponseStream"[label="No"];
+    "Cache" -> "Source";
+    "Source" -> "CSS?";
+    "CSS?" -> "Buffer"[label="No"];
     "CSS?" -> "Autoprefixer"[label="Yes"];
-    "Autoprefixer" -> "ResponseStream";
-    "ResponseStream" -> "data";
+    "Autoprefixer" -> "Buffer";
+    "Buffer" -> "data";
     "fs.read" -> "transpiler?";
 
 }
