@@ -1,0 +1,20 @@
+svg {
+  /*background: #123456;*/
+}
+
+polygon, path, ellipse {
+  fill: none;
+  stroke: #eee;
+}
+
+text {
+  fill: #eee;
+}
+
+.cluster polygon {
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.node ellipse, .node polygon {
+  fill: rgba(255, 255, 255, 0.2);
+}

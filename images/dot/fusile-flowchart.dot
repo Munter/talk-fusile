@@ -1,6 +1,7 @@
 digraph fusile{
     graph[rankdir=LR];
     splines="ortho";
+    stylesheet="fusile.css";
 
     "fs.read"[shape=plaintext];
     "data"[shape=plaintext];
