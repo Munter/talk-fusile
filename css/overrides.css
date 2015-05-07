@@ -1,3 +1,11 @@
+body {
+  background: #1B4D49;
+}
+
+.reveal a:not(.image) {
+  color: #06AEE2;
+}
+
 .reveal section img {
     border: none;
     background: none;
