@@ -73,8 +73,44 @@
           <img src="images/podio.svg" style="height: 500px">
         </section>
 
+        <section>
+          <h1>Making Development Workflows Simple</h1>
+        </section>
+
+        <section>
+          <h1>Transpiling is a problem </h1>
+          <br><br>
+          <h2 class="fragment">More accurately described as:</h2>
+          <p class="fragment">Transpilers are really really awesome tools that enable us to express our ideas easier and more precisely, but setting up an automated workflow around them it kind of difficult and the complexity is scaring newcomers away</p>
+        </section>
+<!--
+        <section data-background="images/handsup.gif">
+
+        </section> -->
+
+        <section class="transpiler fullscreen" data-state="fullscreen">
+
+          <article class="source fragment"><h2>Source</h2></article>
+          <div class="arrow fragment"></div>
+          <article class="compiler"><h2>Transpiler</h2></article>
+          <article class="target fragment"><h2>Source</h2></article>
+
+        </section>
+<!--
         <section data-background="images/comodore-dark.jpg">
           <h1>In the beginning...</h1>
+        </section> -->
+
+        <section data-background="images/codingpirates-dark.png">
+          <h1>The next generation</h1>
+
+          <aside class="notes">
+            Why?
+            Next generation
+            Diversity
+            Lowering the bar of entry
+            Picture: Kids from coding pirates
+          </aside>
         </section>
 
         <section data-background="#6E2B12" data-transition="none">
@@ -91,24 +127,9 @@
 
         </section>
 
-        <section data-background="images/tng.jpg">
-
-        </section>
-
-        <section data-background="images/codingpirates-dark.png">
-          <h1>The <u>real</u> next generation</h1>
-
-          <aside class="notes">
-            Why?
-            Next generation
-            Diversity
-            Lowering the bar of entry
-            Picture: Kids from coding pirates
-          </aside>
-        </section>
-
+<!--
         <section>
-          <h2>Web Development Baseline</h2>
+          <h1>Web Development Baseline</h1>
 
           <ul>
             <li>Git</li>
@@ -119,19 +140,19 @@
             <li>Glob patterns, tempdir, HTTP proxies</li>
             <li>MVC framework of the week</li>
           </ul>
-        </section>
-
+        </section> -->
+<!--
         <section>
           <h2>Forgot something?</h2>
 
           <h2 class="fragment">HTML</h2>
           <h2 class="fragment">CSS</h2>
           <h2 class="fragment">view:source</h2>
-        </section>
+        </section> -->
 
         <section class="fullscreen simple-easy" data-state="fullscreen" data-backgound="#333333">
-          <div class="simple"><h2>Simple</h2></div>
           <div class="easy"><h2>Easy</h2></div>
+          <div class="simple"><h2>Simple</h2></div>
         </section>
 
         <section class="fullscreen workflow-progression" data-state="fullscreen" data-background="#7A6A46">
@@ -140,15 +161,6 @@
           <article class="deploy"><h2>Deploy</h2></article>
 
           <div class="arrow"></div>
-        </section>
-
-        <section class="transpiler fullscreen" data-state="fullscreen">
-
-          <article class="source fragment"><h2>Source</h2></article>
-          <div class="arrow fragment"></div>
-          <article class="compiler"><h2>Transpiler</h2></article>
-          <article class="target fragment"><h2>Source</h2></article>
-
         </section>
 
         <section>
@@ -171,7 +183,19 @@
           </section>
 
           <section data-background="#6E2B12" data-transition="none">
-            <h2>RequireJS<br>SystemJS</h2>
+            <h2>Grunt<br>Gulp</h2>
+            <div class="workflow workflow-loop">
+              <div class="stop editor"><label>Editor</label></div>
+              <div class="stop filesystem"><label>File System</label></div>
+              <div class="stop webserver"><label>Web server</label></div>
+              <div class="stop browser"><label>Browser</label></div>
+
+              <div class="arrow grunt"></div>
+            </div>
+          </section>
+
+          <section data-background="#6E2B12" data-transition="none">
+            <h2>Less.js</h2>
             <div class="workflow workflow-loop">
               <div class="stop editor"><label>Editor</label></div>
               <div class="stop filesystem"><label>File System</label></div>
@@ -183,14 +207,14 @@
           </section>
 
           <section data-background="#6E2B12" data-transition="none">
-            <h2>Grunt<br>Gulp</h2>
+            <h2>RequireJS<br>SystemJS</h2>
             <div class="workflow workflow-loop">
               <div class="stop editor"><label>Editor</label></div>
               <div class="stop filesystem"><label>File System</label></div>
               <div class="stop webserver"><label>Web server</label></div>
               <div class="stop browser"><label>Browser</label></div>
 
-              <div class="arrow grunt"></div>
+              <div class="arrow requirejs"></div>
             </div>
           </section>
 
@@ -218,6 +242,11 @@
             </div>
           </section>
 
+          <section data-transition="none">
+            <h1>Torrent-mount</h1>
+            <img src="images/mindblown.gif" alt="Mindblown" height="800" class="fragment">
+          </section>
+
           <section data-background="#6E2B12" data-transition="none">
             <h2>?</h2>
             <div class="workflow workflow-loop">
@@ -236,21 +265,41 @@
         </section>
 
         <section>
-          <h1>Architecture</h1>
+          <h1>Fusile Architecture</h1>
           <object type="image/svg+xml" data="images/dot/fusile-flowchart.svg" height="500"></object>
         </section>
 
         <section>
           <h1>Fusile</h1>
+          <br>
           <h2><a href="https:/github.com/Munter/fusile">github.com/Munter/fusile</a></h2>
+          <br>
           <pre>$ npm install fusile -g
 $ fusile &lt;sourcedir&gt; &lt;targetdir&gt;</pre>
-          <br><br>
-          <h2>Status: Use at own risk</h2>
+          <br>
+          <h2>License: MIT</h2>
+          <br>
+          <h2>Status: Not mature, Use at own risk</h2>
         </section>
 
         <section>
           <h1>Fusile future</h1>
+          <br>
+          <h2>Performance?</h2>
+          <h2>Stability?</h2>
+          <h2>Windows support?</h2>
+        </section>
+
+        <section data-background="images/codingpirates-dark.png">
+          <h1>The next generation</h1>
+
+          <aside class="notes">
+            Why?
+            Next generation
+            Diversity
+            Lowering the bar of entry
+            Picture: Kids from coding pirates
+          </aside>
         </section>
 
         <section>
