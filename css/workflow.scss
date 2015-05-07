@@ -1,7 +1,33 @@
 
+.cat-wrapper {
+  &.visible {
+    opacity: 0.3 !important;
+  }
+  position: absolute;
+  top: calc(50% + 158px);
+  left: calc(50% + 48px);
+  transform: translate(-50%, -50%);
+
+  -webkit-clip-path: circle(376px at 620px 220px);
+  z-index: 10;
+}
+.workflow-cat {
+
+  transform: scaleX(-0.90) skewX(-10deg);
+
+
+  height: 750px;
+  width: auto;
+
+  max-width: none !important;
+  max-height: none !important;
+
+}
+
 .workflow.workflow-loop {
   $borderWidth: 20px;
   $circleRadius: 40px;
+  z-index: 20;
 
   position: absolute;
 
