@@ -1,0 +1,8 @@
+$foregroundColor: red;
+$backgroundColor: white;
+
+.hello-world-component {
+  background-color: $backgroundColor;
+  color: $foregroundColor;
+  padding: 2 * 20px;
+}
