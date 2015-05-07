@@ -4,7 +4,7 @@ svg {
 
 polygon, path, ellipse {
   fill: none;
-  stroke: #eee;
+  stroke: none;
 }
 
 text {
@@ -13,8 +13,14 @@ text {
 
 .cluster polygon {
   fill: rgba(255, 255, 255, 0.2);
+  stroke: #eee;
 }
 
 .node ellipse, .node polygon {
   fill: rgba(255, 255, 255, 0.2);
+  stroke: #eee;
+}
+
+.edge path, .edge polygon {
+  stroke: #eee;
 }
