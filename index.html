@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/fullscreen.scss">
     <link rel="stylesheet" href="css/simple-easy.scss">
+    <link rel="stylesheet" href="css/transpiler.scss">
     <link rel="stylesheet" href="css/workflow-progression.scss">
     <link rel="stylesheet" href="css/workflow.scss">
     <link rel="stylesheet" href="css/buildsystem.css">
@@ -72,9 +73,13 @@
           <img src="images/podio.svg" style="height: 500px">
         </section>
 
-        <section class="transpiler">
-          <h2>Transpiler</h2>
-          <h3>Source to source compiler</h3>
+        <section class="transpiler fullscreen" data-state="fullscreen">
+
+          <article class="source fragment"><h2>Source</h2></article>
+          <div class="arrow fragment"></div>
+          <article class="compiler"><h2>Transpiler</h2></article>
+          <article class="target fragment"><h2>Source</h2></article>
+
         </section>
 
         <section data-background="images/comodore.jpg">
