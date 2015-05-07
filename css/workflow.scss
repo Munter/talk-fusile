@@ -11,8 +11,8 @@
 
   border: $borderWidth solid white;
   border-radius: 50%;
-  width: 700px;
-  height: 700px;
+  width: 70vh;
+  height: 70vh;
 
   > .stop {
     position: absolute;
@@ -29,6 +29,7 @@
     label {
       position: absolute;
       padding: 10px;
+      font-size: 50px;
     }
 
     &.browser {
