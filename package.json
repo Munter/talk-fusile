@@ -1,21 +1,14 @@
 {
-  "name": "reveal.js",
-  "version": "2.6.2",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
+  "name": "talk-fusile",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Fusile presentation - A talk about simplifying transpiler workflow integration",
   "scripts": {
-    "test": "grunt test",
-    "start": ""
-  },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "start": "livestyle --compilesass --dead"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/munter/talk-fusile.git"
   },
   "engines": {
     "node": "~0.8.0"
@@ -27,22 +20,8 @@
     "socket.io": "~0.9.13"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-connect": "~0.4.1",
-    "grunt-contrib-cssmin": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-qunit": "~0.2.2",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-livestyle": "^1.4.1",
-    "grunt-zip": "~0.7.0",
-    "node-sass": "^2.1.1"
+    "livestyle": "^1.2.2",
+    "node-sass": "^3.0.0"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
-    }
-  ]
+  "license": "MIT"
 }
